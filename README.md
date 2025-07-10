@@ -154,18 +154,6 @@ import ArchitectureDiagram from './components/ArchitectureDiagram';
 7. ✅ 배포 아키텍처
 8. ✅ 모니터링 스택 설계
 
-## 📁 프로젝트 구조
-
-```
-ai-agent-project/
-├── docs/
-│   └── architecture/
-│       ├── ai-server-architecture.svg          # 정적 기술 아키텍처 다이어그램
-│       └── ai-server-architecture-diagram.tsx  # 인터랙티브 React 다이어그램
-├── README.md                                   # 프로젝트 문서
-└── ...
-```
-
 ### 📊 아키텍처 문서 설명
 
 - **ai-server-architecture.svg**: 전체 시스템의 기술 아키텍처를 보여주는 정적 다이어그램
