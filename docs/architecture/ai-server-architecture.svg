@@ -1,0 +1,231 @@
+<svg viewBox="0 0 1400 1200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1400" height="1200" fill="#f5f5f5"/>
+  
+  <!-- Title -->
+  <text x="700" y="40" text-anchor="middle" font-size="28" font-weight="bold" fill="#333">
+    AI Server Management Platform - 기술 아키텍처
+  </text>
+  
+  <!-- Main Container -->
+  <rect x="50" y="70" width="1300" height="1080" fill="white" stroke="#ddd" stroke-width="2" rx="10"/>
+  
+  <!-- Client Layer -->
+  <g transform="translate(100, 100)">
+    <!-- Layer Label -->
+    <rect x="-50" y="20" width="30" height="120" fill="#4caf50" rx="4"/>
+    <text x="-35" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="white" transform="rotate(-90 -35 80)">Client</text>
+    
+    <!-- Layer Content -->
+    <rect x="0" y="0" width="1150" height="100" fill="#e8f5e9" stroke="#81c784" stroke-width="2" rx="8"/>
+    
+    <!-- Component -->
+    <rect x="20" y="15" width="300" height="70" fill="white" stroke="#333" stroke-width="2" rx="6"/>
+    <circle cx="40" cy="35" r="10" fill="#2196f3"/>
+    <text x="36" y="40" font-size="12" fill="white">📱</text>
+    <text x="60" y="35" font-size="14" font-weight="bold">Electron Desktop App</text>
+    <text x="60" y="55" font-size="11" fill="#666">• Windows / macOS 지원</text>
+    <text x="60" y="70" font-size="11" fill="#666">• React 18 + TypeScript</text>
+    
+    <!-- Protocol -->
+    <text x="575" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="#666">⬇ HTTPS / WSS (TLS 1.3) ⬇</text>
+  </g>
+  
+  <!-- Gateway Layer -->
+  <g transform="translate(100, 220)">
+    <!-- Layer Label -->
+    <rect x="-50" y="20" width="30" height="120" fill="#9c27b0" rx="4"/>
+    <text x="-35" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="white" transform="rotate(-90 -35 80)">Gateway</text>
+    
+    <!-- Layer Content -->
+    <rect x="0" y="0" width="1150" height="120" fill="#f3e5f5" stroke="#ba68c8" stroke-width="2" rx="8"/>
+    
+    <!-- Zero-Trust Badge -->
+    <rect x="1050" y="10" width="80" height="25" fill="#f44336" rx="12"/>
+    <text x="1090" y="27" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Zero-Trust</text>
+    
+    <!-- Components -->
+    <rect x="20" y="20" width="280" height="80" fill="white" stroke="#333" stroke-width="2" rx="6"/>
+    <circle cx="40" cy="40" r="10" fill="#2196f3"/>
+    <text x="36" y="45" font-size="12" fill="white">🔒</text>
+    <text x="60" y="40" font-size="14" font-weight="bold">API Gateway</text>
+    <text x="60" y="60" font-size="11" fill="#666">• Nginx Reverse Proxy</text>
+    <text x="60" y="75" font-size="11" fill="#666">• SSL Termination</text>
+    <text x="60" y="90" font-size="11" fill="#666">• Rate Limiting</text>
+    
+    <rect x="320" y="20" width="280" height="80" fill="white" stroke="#333" stroke-width="2" rx="6"/>
+    <circle cx="340" cy="40" r="10" fill="#2196f3"/>
+    <text x="336" y="45" font-size="12" fill="white">🔑</text>
+    <text x="360" y="40" font-size="14" font-weight="bold">Access Control</text>
+    <text x="360" y="60" font-size="11" fill="#666">• OAuth2.0 / JWT</text>
+    <text x="360" y="75" font-size="11" fill="#666">• RBAC Engine (5단계)</text>
+    <text x="360" y="90" font-size="11" fill="#666">• Session Manager</text>
+    
+    <!-- Protocol -->
+    <text x="575" y="115" text-anchor="middle" font-size="12" font-weight="bold" fill="#666">⬇ Internal API (JWT Auth) ⬇</text>
+  </g>
+  
+  <!-- AI Agent Layer -->
+  <g transform="translate(100, 360)">
+    <!-- Layer Label -->
+    <rect x="-50" y="30" width="30" height="140" fill="#ff9800" rx="4"/>
+    <text x="-35" y="100" text-anchor="middle" font-size="14" font-weight="bold" fill="white" transform="rotate(-90 -35 100)">AI Agent</text>
+    
+    <!-- Layer Content -->
+    <rect x="0" y="0" width="1150" height="160" fill="#fff3e0" stroke="#ffb74d" stroke-width="2" rx="8"/>
+    
+    <!-- Docker Container -->
+    <rect x="10" y="10" width="1130" height="120" fill="rgba(33, 150, 243, 0.05)" stroke="#2196f3" stroke-width="2" stroke-dasharray="5,5" rx="8"/>
+    <text x="20" y="30" font-size="12" font-weight="bold" fill="#2196f3">Dockerized AI Agent Environment</text>
+    
+    <!-- Components -->
+    <rect x="30" y="40" width="350" height="70" fill="white" stroke="#333" stroke-width="2" rx="6"/>
+    <circle cx="50" cy="60" r="10" fill="#2196f3"/>
+    <text x="46" y="65" font-size="12" fill="white">🧠</text>
+    <text x="70" y="60" font-size="14" font-weight="bold">Supervisor Agent</text>
+    <rect x="70" y="70" width="70" height="18" fill="#4caf50" rx="9"/>
+    <text x="105" y="82" text-anchor="middle" font-size="10" fill="white">LangGraph</text>
+    <text x="70" y="100" font-size="11" fill="#666">• Intent Analysis • Task Planning</text>
+    
+    <rect x="400" y="40" width="350" height="70" fill="white" stroke="#333" stroke-width="2" rx="6"/>
+    <circle cx="420" cy="60" r="10" fill="#2196f3"/>
+    <text x="416" y="65" font-size="12" fill="white">🛠️</text>
+    <text x="440" y="60" font-size="14" font-weight="bold">Infrastructure Expert</text>
+    <rect x="440" y="70" width="70" height="18" fill="#4caf50" rx="9"/>
+    <text x="475" y="82" text-anchor="middle" font-size="10" fill="white">Agent Card</text>
+    <text x="440" y="100" font-size="11" fill="#666">• Server Commands • File Management</text>
+    
+    <rect x="770" y="40" width="350" height="70" fill="white" stroke="#333" stroke-width="2" rx="6"/>
+    <circle cx="790" cy="60" r="10" fill="#2196f3"/>
+    <text x="786" y="65" font-size="12" fill="white">💾</text>
+    <text x="810" y="60" font-size="14" font-weight="bold">Database Expert</text>
+    <rect x="810" y="70" width="70" height="18" fill="#4caf50" rx="9"/>
+    <text x="845" y="82" text-anchor="middle" font-size="10" fill="white">Agent Card</text>
+    <text x="810" y="100" font-size="11" fill="#666">• Query Execution • Schema Analysis</text>
+    
+    <!-- Protocol -->
+    <text x="575" y="155" text-anchor="middle" font-size="12" font-weight="bold" fill="#666">⬇ Agent Card Protocol (JSON) ⬇</text>
+  </g>
+  
+  <!-- MCP Gateway Layer -->
+  <g transform="translate(100, 540)">
+    <!-- Layer Label -->
+    <rect x="-50" y="40" width="30" height="160" fill="#2196f3" rx="4"/>
+    <text x="-35" y="120" text-anchor="middle" font-size="14" font-weight="bold" fill="white" transform="rotate(-90 -35 120)">MCP Gateway</text>
+    
+    <!-- Layer Content -->
+    <rect x="0" y="0" width="1150" height="180" fill="#e3f2fd" stroke="#64b5f6" stroke-width="2" rx="8"/>
+    
+    <!-- Gateway Component -->
+    <rect x="425" y="10" width="300" height="50" fill="white" stroke="#333" stroke-width="2" rx="6"/>
+    <circle cx="445" cy="30" r="10" fill="#2196f3"/>
+    <text x="441" y="35" font-size="12" fill="white">🔌</text>
+    <text x="465" y="30" font-size="14" font-weight="bold">MCP Integration Gateway</text>
+    <text x="465" y="45" font-size="11" fill="#666">• Node.js • JSON-RPC 2.0</text>
+    
+    <!-- Docker Container -->
+    <rect x="10" y="70" width="1130" height="90" fill="rgba(33, 150, 243, 0.05)" stroke="#2196f3" stroke-width="2" stroke-dasharray="5,5" rx="8"/>
+    <text x="20" y="90" font-size="12" font-weight="bold" fill="#2196f3">Dockerized MCP Server Environment</text>
+    
+    <!-- MCP Servers -->
+    <rect x="30" y="100" width="350" height="50" fill="white" stroke="#333" stroke-width="2" rx="6"/>
+    <text x="40" y="120" font-size="13" font-weight="bold">💻 Infrastructure MCP</text>
+    <text x="40" y="140" font-size="11" fill="#666">• Desktop Commander • Filesystem</text>
+    
+    <rect x="400" y="100" width="350" height="50" fill="white" stroke="#333" stroke-width="2" rx="6"/>
+    <text x="410" y="120" font-size="13" font-weight="bold">🗄️ Database MCP</text>
+    <text x="410" y="140" font-size="11" fill="#666">• PostgreSQL • SQLite</text>
+    
+    <rect x="770" y="100" width="350" height="50" fill="white" stroke="#333" stroke-width="2" rx="6"/>
+    <text x="780" y="120" font-size="13" font-weight="bold">🔗 Integration MCP</text>
+    <text x="780" y="140" font-size="11" fill="#666">• GitHub • GitLab • Slack</text>
+    
+    <!-- Protocol -->
+    <text x="575" y="175" text-anchor="middle" font-size="12" font-weight="bold" fill="#666">⬇ Secure Routing (로컬/원격 자동 판단) ⬇</text>
+  </g>
+  
+  <!-- Secure Proxy Layer -->
+  <g transform="translate(100, 740)">
+    <!-- Layer Label -->
+    <rect x="-50" y="30" width="30" height="140" fill="#f44336" rx="4"/>
+    <text x="-35" y="100" text-anchor="middle" font-size="14" font-weight="bold" fill="white" transform="rotate(-90 -35 100)">Security</text>
+    
+    <!-- Layer Content -->
+    <rect x="0" y="0" width="1150" height="120" fill="#ffebee" stroke="#e57373" stroke-width="2" rx="8"/>
+    
+    <!-- Isolated Badge -->
+    <rect x="1050" y="10" width="80" height="25" fill="#f44336" rx="12"/>
+    <text x="1090" y="27" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Isolated</text>
+    
+    <!-- Docker Container -->
+    <rect x="10" y="30" width="1130" height="70" fill="rgba(244, 67, 54, 0.05)" stroke="#f44336" stroke-width="2" stroke-dasharray="5,5" rx="8"/>
+    <text x="20" y="50" font-size="12" font-weight="bold" fill="#f44336">Secure Proxy Environment (완전 격리)</text>
+    
+    <!-- Components -->
+    <rect x="200" y="55" width="350" height="35" fill="white" stroke="#333" stroke-width="2" rx="6"/>
+    <text x="210" y="78" font-size="13" font-weight="bold">🔐 Secure Proxy Server</text>
+    <text x="350" y="78" font-size="11" fill="#666">• SSH • API • Vault</text>
+    
+    <rect x="600" y="55" width="350" height="35" fill="white" stroke="#333" stroke-width="2" rx="6"/>
+    <text x="610" y="78" font-size="13" font-weight="bold">🛡️ Security Features</text>
+    <text x="750" y="78" font-size="11" fill="#666">• Zero-Trust • Audit</text>
+    
+    <!-- Protocol -->
+    <text x="575" y="115" text-anchor="middle" font-size="12" font-weight="bold" fill="#666">⬇ SSH / HTTPS / SNMP ⬇</text>
+  </g>
+  
+  <!-- Database Layer -->
+  <g transform="translate(100, 880)">
+    <!-- Layer Label -->
+    <rect x="-50" y="30" width="30" height="140" fill="#ff9800" rx="4"/>
+    <text x="-35" y="100" text-anchor="middle" font-size="14" font-weight="bold" fill="white" transform="rotate(-90 -35 100)">Database</text>
+    
+    <!-- Layer Content -->
+    <rect x="0" y="0" width="1150" height="120" fill="#fff8e1" stroke="#ffd54f" stroke-width="2" rx="8"/>
+    
+    <!-- Docker Container -->
+    <rect x="10" y="10" width="1130" height="100" fill="rgba(255, 152, 0, 0.05)" stroke="#ff9800" stroke-width="2" stroke-dasharray="5,5" rx="8"/>
+    <text x="20" y="30" font-size="12" font-weight="bold" fill="#ff9800">Multi-Database Architecture</text>
+    
+    <!-- Database Components -->
+    <rect x="30" y="40" width="270" height="60" fill="white" stroke="#333" stroke-width="2" rx="6"/>
+    <text x="40" y="60" font-size="13" font-weight="bold">📊 PostgreSQL</text>
+    <text x="40" y="80" font-size="11" fill="#666">• 사용자/권한</text>
+    <text x="40" y="95" font-size="11" fill="#666">• 트랜잭션 데이터</text>
+    
+    <rect x="310" y="40" width="270" height="60" fill="white" stroke="#333" stroke-width="2" rx="6"/>
+    <text x="320" y="60" font-size="13" font-weight="bold">📄 MongoDB</text>
+    <text x="320" y="80" font-size="11" fill="#666">• Agent 로그</text>
+    <text x="320" y="95" font-size="11" fill="#666">• 비정형 데이터</text>
+    
+    <rect x="590" y="40" width="270" height="60" fill="white" stroke="#333" stroke-width="2" rx="6"/>
+    <text x="600" y="60" font-size="13" font-weight="bold">🔍 Qdrant</text>
+    <text x="600" y="80" font-size="11" fill="#666">• 벡터 검색</text>
+    <text x="600" y="95" font-size="11" fill="#666">• AI 임베딩</text>
+    
+    <rect x="870" y="40" width="250" height="60" fill="white" stroke="#333" stroke-width="2" rx="6"/>
+    <text x="880" y="60" font-size="13" font-weight="bold">⚡ Redis</text>
+    <text x="880" y="80" font-size="11" fill="#666">• 세션/캐시</text>
+    <text x="880" y="95" font-size="11" fill="#666">• 실시간 상태</text>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(100, 1050)">
+    <rect x="0" y="0" width="1150" height="80" fill="#f5f5f5" stroke="#ddd" stroke-width="1" rx="8"/>
+    
+    <rect x="20" y="30" width="20" height="20" fill="rgba(33, 150, 243, 0.05)" stroke="#2196f3" stroke-width="2" stroke-dasharray="2,2"/>
+    <text x="50" y="45" font-size="12">Docker Container</text>
+    
+    <rect x="200" y="30" width="20" height="20" fill="#f44336" rx="4"/>
+    <text x="230" y="45" font-size="12">보안 격리 영역</text>
+    
+    <rect x="380" y="30" width="20" height="20" fill="#4caf50" rx="4"/>
+    <text x="410" y="45" font-size="12">프로토콜 표시</text>
+    
+    <text x="580" y="45" font-size="12">📊 총 6개 MCP 서버 활용</text>
+    
+    <text x="780" y="45" font-size="12">🔒 Zero-Trust 5계층 보안</text>
+    
+    <text x="980" y="45" font-size="12">⚡ 개발기간 67% 단축</text>
+  </g>
+</svg>
