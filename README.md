@@ -14,7 +14,50 @@ AI 에이전트를 활용한 차세대 서버 관리 플랫폼입니다. Zero-Tr
 
 ## 🏗️ 시스템 아키텍처
 
+### 정적 아키텍처 다이어그램
 ![AI Server Architecture](./docs/architecture/ai-server-architecture.svg)
+
+### 인터랙티브 아키텍처 (React 컴포넌트)
+프로젝트에는 인터랙티브한 React 기반 아키텍처 다이어그램도 포함되어 있습니다:
+- 📍 위치: [`docs/architecture/ai-server-architecture-diagram.tsx`](./docs/architecture/ai-server-architecture-diagram.tsx)
+- 🎯 특징:
+  - 레이어별 상세 정보 토글
+  - 데이터 플로우 시각화
+  - Agent Card 통신 예시
+  - 기술 스택 상세 정보
+
+#### React 컴포넌트 사용 방법
+
+**1. 온라인에서 보기 (CodeSandbox)**
+```
+1. https://codesandbox.io/s/new 접속
+2. React 템플릿 선택
+3. lucide-react 설치: npm install lucide-react
+4. App.js에 컴포넌트 코드 복사
+```
+
+**2. 로컬에서 실행하기**
+```bash
+# React 앱 생성
+npx create-react-app ai-architecture-viewer
+cd ai-architecture-viewer
+
+# 필요한 패키지 설치
+npm install lucide-react
+
+# src/App.js 파일을 열고 컴포넌트 코드 복사 후 붙여넣기
+# 그리고 실행
+npm start
+```
+
+**3. 기존 React 프로젝트에서 사용**
+```jsx
+// 컴포넌트 파일을 복사하여 프로젝트에 추가
+import ArchitectureDiagram from './components/ArchitectureDiagram';
+
+// 사용
+<ArchitectureDiagram />
+```
 
 ### 아키텍처 구성 요소
 
@@ -117,11 +160,20 @@ AI 에이전트를 활용한 차세대 서버 관리 플랫폼입니다. Zero-Tr
 ai-agent-project/
 ├── docs/
 │   └── architecture/
-│       ├── ai-server-architecture.svg      # 기술 아키텍처 다이어그램
-│       └── ai-server-architecture-diagram.tsx  # React 인터랙티브 다이어그램
-├── README.md                               # 프로젝트 문서
+│       ├── ai-server-architecture.svg          # 정적 기술 아키텍처 다이어그램
+│       └── ai-server-architecture-diagram.tsx  # 인터랙티브 React 다이어그램
+├── README.md                                   # 프로젝트 문서
 └── ...
 ```
+
+### 📊 아키텍처 문서 설명
+
+- **ai-server-architecture.svg**: 전체 시스템의 기술 아키텍처를 보여주는 정적 다이어그램
+- **ai-server-architecture-diagram.tsx**: 인터랙티브 기능이 포함된 React 컴포넌트
+  - 레이어별 상세 정보 확인
+  - 데이터 플로우 시각화
+  - 보안 플로우 이해
+  - Agent Card 통신 예시
 
 ## 🤝 기여하기
 
